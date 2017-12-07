@@ -27,15 +27,15 @@ bot.onText(regexp, function(msg, match) {
 });
 
 bot.onText(/\/help/i, function(msg, match) {
-    var message = 'Напишите боту "/напомнить <напоминание> в <время>"\n';
-    message += 'Например: "/напомнить поесть в 13:00"';
+    var message = 'Напишите боту "/напомни <напоминание> в <время>"\n';
+    message += 'Например: "/напомни поесть в 13:00"';
 
     bot.sendMessage(msg.from.id, message);
 });
 
 bot.on('new_chat_members', (msg) => {
-    var message = 'Напишите боту "/напомнить <напоминание> в <время>"\n';
-    message += 'Например: "/напомнить поесть в 13:00"';
+    var message = 'Напишите боту "/напомни <напоминание> в <время>"\n';
+    message += 'Например: "/напомни поесть в 13:00"';
 
     bot.sendMessage(msg.from.id, message);
 });
