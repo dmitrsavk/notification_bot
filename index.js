@@ -22,7 +22,7 @@ bot.onText(regexp, function(msg, match) {
 
     bot.sendMessage(
         userId,
-        'Отлично! Я обязательно напомню, если не сдохну :)'
+        'Отлично! Я обязательно напомню!'
     );
 });
 
